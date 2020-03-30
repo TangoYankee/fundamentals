@@ -100,4 +100,3 @@ print(f"Parallel time={end_time - start_time}")
 ## Sources
 1. [wikipedia](https://en.wikipedia.org/wiki/Concurrent_computing)  
 2. [tuts plus](https://code.tutsplus.com/articles/introduction-to-parallel-and-concurrent-programming-in-python--cms-28612)
-
