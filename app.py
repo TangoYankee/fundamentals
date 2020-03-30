@@ -1,4 +1,3 @@
-# mistake: did not transfer from text to py
 from flask import Flask
 import markdown
 import markdown.extensions.fenced_code
@@ -10,7 +9,7 @@ app = Flask(__name__)
 
 
 def markdown_to_web(input_file):
-    markdown_file = open(input_file, "r")  # mistake: r was not in quotes
+    markdown_file = open(input_file, "r")
     md_template_string = markdown.markdown(
         markdown_file.read(), extensions=["fenced_code", "codehilite"]
     )
@@ -27,10 +26,10 @@ def index():
     return markdown_to_web("index.md")
 
 
-@app.route('/concurrency', methods=['GET'])  # mistake: didn't close the quote
+@app.route('/concurrency', methods=['GET'])
 def concurrency():
     return markdown_to_web("concurrency/overview.md")
 
 
-if __name__ == "__main__":  # mistake: left out the colon
+if __name__ == "__main__":
     app.run()
