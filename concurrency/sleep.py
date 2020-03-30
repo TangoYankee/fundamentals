@@ -25,8 +25,7 @@ print(f"Serial time={end_time - start_time}")
 """Threading"""
 start_time = time.time()
 threads = [threading.Thread(target=only_sleep) for _ in range(
-    NUM_WORKERS)]  # mistake: wrote 'of' instead of 'for'
-# mistake: tried to operation on the list, rather than the item (threads/thread)
+    NUM_WORKERS)]
 [thread.start() for thread in threads]
 [thread.join() for thread in threads]
 end_time = time.time()
