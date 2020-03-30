@@ -4,21 +4,23 @@ import time
 import threading
 import multiprocessing
 
-NUM_WORKERS = 4 #mistake: neglected to define number of workers
+NUM_WORKERS = 4  # mistake: neglected to define number of workers
+
 
 def crunch_numbers():
     """Do some computations"""
     print(f"PID: {os.getpid()}, Process Name: {multiprocessing.current_process().name}, Thread Name: {threading.current_thread().name}")
     x = 0
-    while x < 1*10**7: # Mistake: placed 8 instead of 7 zeroes
-      x += 1
+    while x < 1*10**7:  # Mistake: placed 8 instead of 7 zeroes
+        x += 1
+
 
 """Run crunch_numbers() sequentially, multi-threaded, and then with multiple processes.
 Compare the results."""
 
 """Serial"""
 start_time = time.time()
-for _ in range(NUM_WORKERS): #mistake: typo
+for _ in range(NUM_WORKERS):  # mistake: typo
     crunch_numbers()
 end_time = time.time()
 print(f"Serial time={end_time - start_time}")
@@ -34,7 +36,8 @@ print(f"Threads time={end_time - start_time}")
 
 """Processes"""
 start_time = time.time()
-processes = [multiprocessing.Process(target=crunch_numbers) for _ in range(NUM_WORKERS)]
+processes = [multiprocessing.Process(
+    target=crunch_numbers) for _ in range(NUM_WORKERS)]
 [process.start() for process in processes]
 [process.join() for process in processes]
 end_time = time.time()
