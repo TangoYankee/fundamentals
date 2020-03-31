@@ -13,6 +13,10 @@ Studying computer science and mathematics fundamentals, such as data structures 
 - Graphs and Trees
 - Heaps, Stacks, and Queues
 - Sorting
+  - Quicksort
+  - Mergesort
+  - Heapsort
+  - Radix
 - Searching
 - Discrete Mathematics: 
   - Sets
