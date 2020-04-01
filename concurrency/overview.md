@@ -1,4 +1,4 @@
-[Return Home](/)  
+[Home](/fundamentals/)  
 
 # Concurrency
 Multiple computations are executed during overlapping time periods. This is in contrast to sequentially,
