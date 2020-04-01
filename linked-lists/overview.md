@@ -1,2 +1,4 @@
+[Home](/fundamentals/)
+
 # Linked Lists
 

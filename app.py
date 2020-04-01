@@ -31,5 +31,15 @@ def concurrency():
     return markdown_to_web("concurrency/overview.md")
 
 
+@app.route('/hashing', methods=['GET'])
+def hashing():
+    return markdown_to_web("hashing/overview.md")
+
+
+@app.route('/sorting', methods=['GET'])
+def sorting():
+    return markdown_to_web("sorting/overview.md")
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0")

@@ -6,18 +6,22 @@ Studying computer science and mathematics fundamentals, such as data structures 
   - Concurrently access files from a harddrive (upcoming)
 - [Linked Lists](linked-lists/overview.md) (upcoming)
   - Shuffle a deck of cards
-
+- [Hash Tables](hashing/overview.md)
+  - Implement a custom hash table (upcoming)
+  
 ### Upcoming
-- Hash Tables
-  - Implement a custom hash table
-- Graphs and Trees
-- Heaps, Stacks, and Queues
+- Stacks and Graphs
+  - Stacks
+  - Queues
+  - Trees
+  - Priority queues and heaps
 - Sorting
   - Quicksort
   - Mergesort
   - Heapsort
   - Radix
 - Searching
+  - Binary Search
 - Discrete Mathematics: 
   - Sets
   - Combinatorics
