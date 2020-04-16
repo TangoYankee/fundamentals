@@ -10,6 +10,8 @@ Studying computer science and mathematics fundamentals, such as data structures 
   - Implement a custom hash table (upcoming)
   
 ### Upcoming
+- Big O Notation
+  - https://www.bigocheatsheet.com/
 - Stacks and Graphs
   - Stacks
   - Queues
