@@ -37,13 +37,13 @@ def display(head):
 
 def reverse_linked_list(head):
   current = head
-  prev = None # Eventually end with Null
+  prev = None """ Eventually end with Null """
   while(current):
-    temp = current.next # Temporary node to prevent next node getting lost
-    current.next = prev # Reverse pointer for current node
-    prev = current # Current node falls one position
-    current = temp # Find the temporary node
-  return prev # Holds the last valid reference to a node. Current is now null
+    temp = current.next """ Temporary node to prevent next node getting lost """
+    current.next = prev """ Reverse pointer for current node """
+    prev = current """ Current node falls one position """
+    current = temp """ Find the temporary node """
+  return prev """ Holds the last valid reference to a node. Current is now null """
 
 llist = create_linked_list()
 display(llist.head)

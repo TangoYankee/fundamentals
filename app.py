@@ -41,5 +41,10 @@ def sorting():
     return markdown_to_web("sorting/overview.md")
 
 
+@app.route('/linked-lists', methods=['GET'])
+def linked_lists():
+    return markdown_to_web("linked-lists/overview.md")
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
