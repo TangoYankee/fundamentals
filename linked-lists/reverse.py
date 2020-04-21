@@ -1,10 +1,3 @@
-[Home](/fundamentals/)
-
-# Linked Lists
-
-
-## Structure
-```
 class Node:
   def __init__(self, value):
     self.value = value
@@ -18,11 +11,7 @@ class LinkedList:
     node = Node(value)
     node.next = self.head
     self.head = node
-
-```
-
-## Reverse
-```
+    
 def create_linked_list():
   llist = LinkedList()
   for i in range(0,17,4):
@@ -50,4 +39,3 @@ llist = create_linked_list()
 display(llist.head)
 reversed_head = reverse_linked_list(llist.head)
 display(reversed_head)
-```
