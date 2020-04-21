@@ -2,7 +2,6 @@
 
 # Linked Lists
 
-
 ## Structure
 ```
 class Node:
